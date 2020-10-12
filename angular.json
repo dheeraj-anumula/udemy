@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Udemy"
+    }
+  },
+  "defaultProject": "Udemy",
+  "cli": {
+    "analytics": "6bbcb074-d8a9-483e-b70b-5ac2886a41f6"
+  }
 }

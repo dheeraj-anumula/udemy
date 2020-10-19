@@ -1,1 +1,35 @@
-<p>course works!</p>
+<div class="card">
+    <div class="card-head px-3 pt-4">
+        <div>
+            <h4 class="mr-2">{{course.title}} </h4>
+            <h4>{{course.id}}. Name Tag</h4>
+        </div>
+
+        <div class="card-details">
+            <div class="pr-3">
+                <i class="material-icons">access_time</i>
+                <span>{{displayDuration}}</span>
+            </div>
+            <div>
+                <i class="material-icons">calendar_today</i>
+                <span>{{displayCreationDate}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <div class="description">
+            <p class="card-text">{{course.description}}</p>
+        </div>
+
+        <div class="ml-auto">
+            <button type="button" class="btn btn-primary btn-sm pr-3 mr-2 " (click)="handleEditCourse(course.id)">
+                <i class="material-icons ">edit</i>Edit
+            </button>
+
+            <button type="button " class="btn btn-primary btn-sm pr-3 mr-2 " (click)="handleDeleteCourse(course.id)">
+                <i class="material-icons ">delete</i>Delete
+            </button>
+        </div>
+    </div>
+</div>

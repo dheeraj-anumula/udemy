@@ -1,6 +1,9 @@
-<h1> Courses </h1>
-<app-course-section></app-course-section>
-<app-course></app-course>
-<app-course></app-course>
-<app-course></app-course>
-<app-course></app-course>
+<div class="container">
+    <app-course-section></app-course-section>
+    <div *ngFor='let course of courses'>
+        <app-course [course]=course (deleteCourse)="deleteCourse($event)" (editCourse)="editCourse($event)"></app-course>
+    </div>
+    <div class="card mb-4">
+        <button type="button" class="btn btn-link" (click)="loadMore()">Load more</button>
+    </div>
+</div>

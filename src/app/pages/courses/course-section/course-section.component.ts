@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-course-section',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseSectionComponent implements OnInit {
 
-  constructor() { }
+  searchForm;
+  constructor(private formBuilder: FormBuilder) {
+    this.searchForm = this.formBuilder.group({ search: '' })
+  }
 
   ngOnInit(): void {
+  }
+
+  public searchCourse(searchForm) {
+    console.log(searchForm.search)
+  }
+
+  addNewCourse(){
+    console.log('Adding new course');
   }
 
 }

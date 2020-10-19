@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CoursesComponent } from './courses/courses.component';
 import { CourseComponent } from './courses/course/course.component';
 import { CourseSectionComponent } from './courses/course-section/course-section.component';
+import { FormBuilder, FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,9 @@ import { CourseSectionComponent } from './courses/course-section/course-section.
     CourseSectionComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [CoursesComponent]
 })

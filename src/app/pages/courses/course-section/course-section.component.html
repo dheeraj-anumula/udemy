@@ -1,1 +1,15 @@
-<p>course-section works!</p>
+<div class="course-section my-4">
+    <form class="form-inline" [formGroup]="searchForm" (ngSubmit)="searchCourse(searchForm.value)">
+        <div class=" form-group mr-sm-3 ">
+            <label class="sr-only " for="search ">Course</label>
+            <input name="search " type="text " formControlName="search" class="form-control " id="search " placeholder="Type to search " />
+        </div>
+        <button type="submit " class="btn btn-success ">Search</button>
+    </form>
+    <div class="add-course d-flex flex-row-reverse">
+        <button type="button " class="btn btn-primary" (click)="addNewCourse()">
+            <i class="material-icons ">add_circle_outlined</i>
+            Add Course
+        </button>
+    </div>
+</div>

@@ -1,3 +1,18 @@
 :host {
     flex: 1 0 auto;
+    background-color: #f5f6fa;
+}
+
+.card {
+    background-color: white;
+}
+
+button {
+    display: inline;
+    margin: auto;
+    color: blue;
+    border: none;
+    width: 7rem;
+    text-decoration: underline;
+    font-size: 0.8rem;
 }

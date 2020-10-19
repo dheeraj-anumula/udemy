@@ -1,3 +1,22 @@
 :host{
     flex-shrink: 0;
+    background-color:#30323f;
+}
+
+.container {
+    display: flex;
+    height: 3rem;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.material-icons {
+    font-size: medium;
+    position: relative;
+    top: 5px;
+}
+
+p{
+    color: white;
 }
